@@ -47,6 +47,9 @@ namespace NormalRV {
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Label^ label8;
+	private: System::Windows::Forms::Label^ label9;
 
 	private:
 		/// <summary>
@@ -61,8 +64,8 @@ namespace NormalRV {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea2 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Series^ series2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea3 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Series^ series3 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->numericUpDown3 = (gcnew System::Windows::Forms::NumericUpDown());
@@ -75,6 +78,9 @@ namespace NormalRV {
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown2))->BeginInit();
@@ -128,6 +134,7 @@ namespace NormalRV {
 			// numericUpDown1
 			// 
 			this->numericUpDown1->Location = System::Drawing::Point(93, 138);
+			this->numericUpDown1->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 10000, 0, 0, 0 });
 			this->numericUpDown1->Name = L"numericUpDown1";
 			this->numericUpDown1->Size = System::Drawing::Size(120, 22);
 			this->numericUpDown1->TabIndex = 3;
@@ -162,14 +169,14 @@ namespace NormalRV {
 			// 
 			// chart1
 			// 
-			chartArea2->Name = L"ChartArea1";
-			this->chart1->ChartAreas->Add(chartArea2);
+			chartArea3->Name = L"ChartArea1";
+			this->chart1->ChartAreas->Add(chartArea3);
 			this->chart1->Location = System::Drawing::Point(394, 35);
 			this->chart1->Name = L"chart1";
-			series2->ChartArea = L"ChartArea1";
-			series2->IsVisibleInLegend = false;
-			series2->Name = L"Series1";
-			this->chart1->Series->Add(series2);
+			series3->ChartArea = L"ChartArea1";
+			series3->IsVisibleInLegend = false;
+			series3->Name = L"Series1";
+			this->chart1->Series->Add(series3);
 			this->chart1->Size = System::Drawing::Size(717, 521);
 			this->chart1->TabIndex = 1;
 			this->chart1->Text = L"chart1";
@@ -202,11 +209,39 @@ namespace NormalRV {
 			this->label6->TabIndex = 4;
 			this->label6->Text = L"Chi-squared:";
 			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Location = System::Drawing::Point(102, 350);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(0, 16);
+			this->label7->TabIndex = 5;
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Location = System::Drawing::Point(102, 385);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(0, 16);
+			this->label8->TabIndex = 6;
+			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->Location = System::Drawing::Point(121, 451);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(44, 16);
+			this->label9->TabIndex = 7;
+			this->label9->Text = L"label9";
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1135, 568);
+			this->Controls->Add(this->label9);
+			this->Controls->Add(this->label8);
+			this->Controls->Add(this->label7);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label4);

@@ -64,8 +64,8 @@ namespace NormalRV {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea3 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Series^ series3 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea4 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Series^ series4 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->numericUpDown3 = (gcnew System::Windows::Forms::NumericUpDown());
@@ -169,14 +169,14 @@ namespace NormalRV {
 			// 
 			// chart1
 			// 
-			chartArea3->Name = L"ChartArea1";
-			this->chart1->ChartAreas->Add(chartArea3);
+			chartArea4->Name = L"ChartArea1";
+			this->chart1->ChartAreas->Add(chartArea4);
 			this->chart1->Location = System::Drawing::Point(394, 35);
 			this->chart1->Name = L"chart1";
-			series3->ChartArea = L"ChartArea1";
-			series3->IsVisibleInLegend = false;
-			series3->Name = L"Series1";
-			this->chart1->Series->Add(series3);
+			series4->ChartArea = L"ChartArea1";
+			series4->IsVisibleInLegend = false;
+			series4->Name = L"Series1";
+			this->chart1->Series->Add(series4);
 			this->chart1->Size = System::Drawing::Size(717, 521);
 			this->chart1->TabIndex = 1;
 			this->chart1->Text = L"chart1";
@@ -230,9 +230,8 @@ namespace NormalRV {
 			this->label9->AutoSize = true;
 			this->label9->Location = System::Drawing::Point(121, 451);
 			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(44, 16);
+			this->label9->Size = System::Drawing::Size(0, 16);
 			this->label9->TabIndex = 7;
-			this->label9->Text = L"label9";
 			// 
 			// MyForm
 			// 
